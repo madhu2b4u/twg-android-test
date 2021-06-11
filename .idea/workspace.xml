@@ -1,23 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="71df0f53-9c32-4229-893c-d3ba8ff6860d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/SplashActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/WarehouseTestApp.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/BaseFrament.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/Constants.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/Mapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/Result.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/SingleEvent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/SpUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/ViewModelFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/ActivityBuilderModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/AppComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/AppModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/FragmentBuilderModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/NetworkModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/ViewModelKey.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/qualifiers/IO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/qualifiers/MainThread.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/data/models/UserResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/data/remote/services/MainService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/data/remote/source/MainRemoteDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/data/remote/source/MainRemoteDataSourceImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/data/repository/MainRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/data/repository/MainRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/di/MainDomainModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/di/MainPresentationModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/di/MainRemoteModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/domain/MainUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/domain/MainUseCaseImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/ui/activity/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/ui/fragments/MainFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/viewmodel/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_out.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/mysplashanimation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/popup_hide.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/popup_show.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/slide_in_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/slide_in_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/slide_out_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/slide_out_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/zoom_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/twglogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav_graph.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/BarScanActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/EndlessRecyclerOnScrollListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/FooterViewHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/PermissionActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/PermissionChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/ProductDetailActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/SearchActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/SearchResultActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/SearchResultAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/SearchResultViewHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/Utils/PreferenceUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/WarehouseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/WarehouseTestApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/data/Price.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/data/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/data/ProductDetail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/data/ProductWithoutPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/data/SearchResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/data/SearchResultItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/data/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_bar_scan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_permission.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_product_detail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_search_result.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_zxing_scan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_product.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_separate_line_horizontal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_refresh_footer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twg-android-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/twg-android-test.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6P_API_26" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="8AEY0JNJN" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -35,14 +121,45 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="navigationResourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common" />
+  </component>
+  <component name="RecentsManager">
+    <key name="android.template.packageName">
+      <recent name="nz.co.warehouseandroidtest.barcode" />
+      <recent name="nz.co.warehouseandroidtest.main" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="nz.co.warehouseandroidtest.common" />
+    </key>
+    <key name="android.template.1554164495">
+      <recent name="nz.co.warehouseandroidtest.main.presentation.ui.activity" />
+      <recent name="nz.co.warehouseandroidtest" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/anim" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -52,7 +169,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -114,9 +231,70 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="536" y="293" width="698" height="488" key="find.popup" timestamp="1623382585552">
-      <screen x="83" y="25" width="1597" height="1025" />
+    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1623387126644">
+      <screen x="86" y="25" width="1594" height="1025" />
     </state>
+    <state x="1026" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1623383075252" />
+    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser/86.25.1594.1025@86.25.1594.1025" timestamp="1623387126644" />
+    <state x="350" y="467" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1623386047856">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state x="350" y="467" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623386047856" />
+    <state x="869" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623383856211">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="869" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1623383856211" />
+    <state x="469" y="296" key="AndroidCreateResourceFileDialog" timestamp="1623386901605">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state x="469" y="296" key="AndroidCreateResourceFileDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623386901605" />
+    <state width="1552" height="611" key="GridCell.Tab.0.bottom" timestamp="1623387993902">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state width="1552" height="611" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623387993902" />
+    <state width="1552" height="611" key="GridCell.Tab.0.center" timestamp="1623387993901">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state width="1552" height="611" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623387993901" />
+    <state width="1552" height="611" key="GridCell.Tab.0.left" timestamp="1623387993900">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state width="1552" height="611" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623387993900" />
+    <state width="1552" height="611" key="GridCell.Tab.0.right" timestamp="1623387993901">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state width="1552" height="611" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623387993901" />
+    <state x="661" y="319" key="chooseDestDirectoryDialog" timestamp="1623384931680">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state x="661" y="319" key="chooseDestDirectoryDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623384931680" />
+    <state x="539" y="156" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1623386351837">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state x="539" y="156" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/86.25.1594.1025@86.25.1594.1025" timestamp="1623386351837" />
+    <state x="184" y="125" width="1394" height="825" key="dock-window-1" timestamp="1623387292565">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state x="184" y="125" width="1394" height="825" key="dock-window-1/86.25.1594.1025@86.25.1594.1025" timestamp="1623387292565" />
+    <state x="477" y="275" width="735" height="500" key="find.popup" timestamp="1623383583977">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="477" y="275" width="735" height="500" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1623383583977" />
     <state x="536" y="293" width="698" height="488" key="find.popup/83.25.1597.1025@83.25.1597.1025" timestamp="1623382585552" />
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1623387932180">
+      <screen x="86" y="25" width="1594" height="1025" />
+    </state>
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623387932180" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/ui/fragments/MainFragment.kt</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
