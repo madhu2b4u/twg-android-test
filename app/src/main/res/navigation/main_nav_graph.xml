@@ -11,6 +11,23 @@
         android:label="fragment_main"
         tools:layout="@layout/fragment_main">
 
+        <action
+            android:id="@+id/action_navigate_search"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out"/>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="nz.co.warehouseandroidtest.search.presentation.ui.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+
     </fragment>
 
 

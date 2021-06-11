@@ -11,7 +11,7 @@ class MainRepositoryImpl @Inject constructor(
     private val remoteDataSource: MainRemoteDataSource
 ) : MainRepository {
 
-    override suspend fun getUserId()= liveData {
+    override suspend fun getUserId() = liveData {
         emit(Result.loading())
         try {
             val response = remoteDataSource.getUserId()

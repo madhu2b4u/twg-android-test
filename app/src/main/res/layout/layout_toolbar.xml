@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_height="56dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/ivBack"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:src="@drawable/baseline_keyboard_arrow_left_white_36dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvTitle"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:gravity="center|start"
+        android:text="@string/the_warehouse_group"
+        android:textSize="@dimen/text_18sp"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -18,7 +18,7 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main.presentation.ui.activity.MainActivity"></activity>
+        <activity android:name=".main.presentation.ui.activity.MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
