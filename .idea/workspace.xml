@@ -10,17 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71df0f53-9c32-4229-893c-d3ba8ff6860d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/LiveDataTestUtil.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/MainCoroutineRule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/TestUtils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainRemoteDataSourceTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainRepositoryTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainUseCaseTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/data/models/Price.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/data/models/ProductDetail.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/data/models/ProductDetailsResponse.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/data/remote/services/ProductService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/data/remote/source/ProductRemoteDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/data/remote/source/ProductRemoteDataSourceImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/data/repository/ProductRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/data/repository/ProductRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/di/ProductDomainModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/di/ProductPresentationModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/di/ProductRemoteModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/domain/ProductUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/domain/ProductUseCaseImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/presentation/ui/fragments/ProductFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/presentation/viewmodel/ProductViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_product.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/nz/co/warehouseandroidtest/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/AppComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/AppComponent.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/FragmentBuilderModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/FragmentBuilderModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/remote/source/SearchRemoteDataSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/remote/source/SearchRemoteDataSource.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +93,10 @@
       <recent name="nz.co.warehouseandroidtest.common" />
     </key>
     <key name="android.template.packageName">
+      <recent name="nz.co.warehouseandroidtest.productdetail" />
+      <recent name="nz.co.warehouseandroidtest.main" />
       <recent name="nz.co.warehouseandroidtest.search" />
       <recent name="nz.co.warehouseandroidtest.barcode" />
-      <recent name="nz.co.warehouseandroidtest.main" />
     </key>
     <key name="android.template.1554164495">
       <recent name="nz.co.warehouseandroidtest.main.presentation.ui.activity" />
@@ -104,7 +116,7 @@
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.MainUseCaseTest">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="MainRemoteDataSourceTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -236,12 +248,12 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1058" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1623396664522">
-      <screen x="83" y="25" width="1597" height="1025" />
+    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1623458027142">
+      <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="1026" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1623389673040" />
     <state x="1058" y="264" key="#com.intellij.ide.util.MemberChooser/83.25.1597.1025@83.25.1597.1025" timestamp="1623396664522" />
-    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser/86.25.1594.1025@86.25.1594.1025" timestamp="1623387126644" />
+    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser/86.25.1594.1025@86.25.1594.1025" timestamp="1623458027142" />
     <state x="347" y="467" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1623398282640">
       <screen x="83" y="25" width="1597" height="1025" />
     </state>
@@ -251,11 +263,11 @@
       <screen x="83" y="25" width="1597" height="1025" />
     </state>
     <state x="625" y="421" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/83.25.1597.1025@83.25.1597.1025" timestamp="1623398283964" />
-    <state x="514" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1623449132977">
+    <state x="514" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1623457614778">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="512" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623398384437" />
-    <state x="514" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623449132977" />
+    <state x="514" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623457614778" />
     <state x="911" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623453909403">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
@@ -280,34 +292,34 @@
       <screen x="83" y="25" width="1597" height="1025" />
     </state>
     <state x="739" y="306" key="AndroidProcessChooserDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623399687920" />
-    <state width="1552" height="276" key="GridCell.Tab.0.bottom" timestamp="1623456478291">
+    <state width="1552" height="276" key="GridCell.Tab.0.bottom" timestamp="1623457412797">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705108" />
     <state width="1552" height="401" key="GridCell.Tab.0.bottom/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614120" />
     <state width="1552" height="342" key="GridCell.Tab.0.bottom/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136567" />
-    <state width="1552" height="276" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623456478291" />
-    <state width="1552" height="276" key="GridCell.Tab.0.center" timestamp="1623456478289">
+    <state width="1552" height="276" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623457412797" />
+    <state width="1552" height="276" key="GridCell.Tab.0.center" timestamp="1623457412796">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705107" />
     <state width="1552" height="401" key="GridCell.Tab.0.center/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614118" />
     <state width="1552" height="342" key="GridCell.Tab.0.center/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136566" />
-    <state width="1552" height="276" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623456478289" />
-    <state width="1552" height="276" key="GridCell.Tab.0.left" timestamp="1623456478288">
+    <state width="1552" height="276" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623457412796" />
+    <state width="1552" height="276" key="GridCell.Tab.0.left" timestamp="1623457412795">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705106" />
     <state width="1552" height="401" key="GridCell.Tab.0.left/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614118" />
     <state width="1552" height="342" key="GridCell.Tab.0.left/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136565" />
-    <state width="1552" height="276" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623456478288" />
-    <state width="1552" height="276" key="GridCell.Tab.0.right" timestamp="1623456478290">
+    <state width="1552" height="276" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623457412795" />
+    <state width="1552" height="276" key="GridCell.Tab.0.right" timestamp="1623457412796">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705107" />
     <state width="1552" height="401" key="GridCell.Tab.0.right/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614119" />
     <state width="1552" height="342" key="GridCell.Tab.0.right/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136566" />
-    <state width="1552" height="276" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623456478290" />
+    <state width="1552" height="276" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623457412796" />
     <state width="1552" height="342" key="GridCell.Tab.1.bottom" timestamp="1623400136568">
       <screen x="83" y="25" width="1597" height="1025" />
     </state>
@@ -345,17 +357,18 @@
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="184" y="125" width="1394" height="825" key="dock-window-1/86.25.1594.1025@86.25.1594.1025" timestamp="1623387292565" />
-    <state x="477" y="275" width="735" height="500" key="find.popup" timestamp="1623383583977">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="539" y="293" width="698" height="489" key="find.popup" timestamp="1623457936423">
+      <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="477" y="275" width="735" height="500" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1623383583977" />
     <state x="536" y="293" width="698" height="488" key="find.popup/83.25.1597.1025@83.25.1597.1025" timestamp="1623382585552" />
-    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1623456397088">
+    <state x="539" y="293" width="698" height="489" key="find.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623457936423" />
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1623458072781">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="485" y="233" width="707" height="693" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1623393752006" />
     <state x="538" y="252" width="676" height="677" key="search.everywhere.popup/75.25.1605.1025@75.25.1605.1025" timestamp="1623392106004" />
     <state x="544" y="252" width="673" height="677" key="search.everywhere.popup/83.25.1597.1025@83.25.1597.1025" timestamp="1623396836070" />
-    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623456397088" />
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623458072781" />
   </component>
 </project>

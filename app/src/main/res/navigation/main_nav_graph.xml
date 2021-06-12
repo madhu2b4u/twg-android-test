@@ -19,6 +19,14 @@
             app:popEnterAnim="@android:anim/slide_in_left"
             app:popExitAnim="@anim/fade_out"/>
 
+        <action
+            android:id="@+id/action_navigate_product"
+            app:destination="@id/priceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@anim/fade_out"/>
+
     </fragment>
 
 
@@ -27,6 +35,15 @@
         android:name="nz.co.warehouseandroidtest.search.presentation.ui.fragments.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/priceFragment"
+        android:name="nz.co.warehouseandroidtest.productdetail.presentation.ui.fragments.ProductFragment"
+        android:label="fragment_price"
+        tools:layout="@layout/fragment_product">
 
     </fragment>
 
