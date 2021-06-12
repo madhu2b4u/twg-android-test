@@ -22,8 +22,13 @@ class SearchResultsAdapter() : RecyclerView.Adapter<SearchResultsAdapter.SearchR
         this.clickFunction = clickFunction
     }
 
+    fun clearItems(){
+        this.listOfProducts.clear()
+        notifyDataSetChanged()
+    }
+
     fun updateProducts(products: ArrayList<Product>){
-        this.listOfProducts = products
+        this.listOfProducts.addAll(products)
         notifyDataSetChanged()
     }
 
@@ -47,7 +52,6 @@ class SearchResultsAdapter() : RecyclerView.Adapter<SearchResultsAdapter.SearchR
                 setOnClickListener {
                     clickFunction?.invoke(product,position)
                 }
-
                 if (!TextUtils.isEmpty(product.description)) {
                     tvProductDesc.text = product.description
                 }

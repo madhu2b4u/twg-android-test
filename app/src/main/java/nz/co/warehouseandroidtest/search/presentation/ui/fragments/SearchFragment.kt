@@ -29,6 +29,10 @@ class SearchFragment : BaseFragment() {
 
     private var startIndex = 0
 
+    private var totalItemNum = 0
+
+    private var query = ""
+
     private lateinit var mSearchViewModel: SearchViewModel
 
     private lateinit var searchResultsAdapter : SearchResultsAdapter
@@ -72,6 +76,7 @@ class SearchFragment : BaseFragment() {
                 rvSearchResult.visibility = View.GONE
             }
             Status.ERROR -> {
+                activity?.snackBarError(it.message.toString())
                 rvLoader.visibility = View.GONE
                 cardNoImage.visibility = View.VISIBLE
                 rvSearchResult.visibility = View.GONE
@@ -85,9 +90,9 @@ class SearchFragment : BaseFragment() {
     }
 
     private fun setResultData(searchResult: SearchResponse) {
-        data.clear()
         val ifFound: String = searchResult.found
         if (ifFound == "Y") {
+            totalItemNum = searchResult.hitCount.toInt()
             rvLoader.visibility = View.GONE
             rvSearchResult.visibility = View.VISIBLE
             cardNoImage.visibility = View.GONE
@@ -95,6 +100,7 @@ class SearchFragment : BaseFragment() {
                 data.add(it.products[0])
             }
             searchResultsAdapter.updateProducts(data)
+
         }else{
             rvSearchResult.visibility = View.GONE
             cardNoImage.visibility = View.VISIBLE
@@ -119,18 +125,35 @@ class SearchFragment : BaseFragment() {
             startActivity(intent)
         }
 
+        viewListener()
+
         ivSearch.setOnClickListener {
-            val query = etSearch.text.toString()
+            query = etSearch.text.toString()
             etSearch.clearFocus()
             hideKeyboard()
             if (query.isNotEmpty()){
-                mSearchViewModel.getSearchResults(mapQuery(query))
+                searchResultsAdapter.clearItems()
+                mSearchViewModel.getSearchResults(mapQuery())
+            }else{
+                activity?.snackBarInfo("Please enter search keyword")
             }
         }
 
     }
 
-    private fun mapQuery(query: String): Map<String, Any> {
+    private fun viewListener() {
+        rvSearchResult.addOnScrollListener(object : EndlessRecyclerOnScrollListener() {
+            override fun onLoadMore() {
+                if (data.size < totalItemNum) {
+                    mSearchViewModel.getSearchResults(mapQuery())
+                }else{
+                    activity?.snackBarInfo("No More Items")
+                }
+            }
+        })
+    }
+
+    private fun mapQuery(): Map<String, Any> {
        return  mapOf("Search" to query, "MachineID" to MACHINE_ID, "UserID" to sharedPrefUtil.getString(USERID).toString(), "Branch" to BRANCH_ID, "Start" to startIndex, "Limit" to limit)
     }
 
