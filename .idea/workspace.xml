@@ -10,65 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71df0f53-9c32-4229-893c-d3ba8ff6860d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/Extensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/remote/models/Product.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/remote/models/SearchResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/remote/models/SearchResult.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/remote/services/SearchService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/remote/source/SearchRemoteDataSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/remote/source/SearchRemoteDataSourceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/repository/SearchRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/data/repository/SearchRepositoryImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/di/SearchDomainModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/di/SearchPresentationModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/di/SearchRemoteModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/domain/SearchUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/domain/SearchUseCaseImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/adapter/SearchResultsAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/viewmodel/SearchViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_keyboard_arrow_left_white_36dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_search_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_search_black_36dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_rounded_corner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/image_placeholder.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/roboto_black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/roboto_bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/roboto_light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/roboto_medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/roboto_regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/roboto_thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_toolbar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item_search_result.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/LiveDataTestUtil.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/MainCoroutineRule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/TestUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainRemoteDataSourceTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainRepositoryTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainUseCaseTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/AppComponent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/AppComponent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/FragmentBuilderModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/di/FragmentBuilderModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/data/repository/MainRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/data/repository/MainRepositoryImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/ui/fragments/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/ui/fragments/MainFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_magnify.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_pic_place_holder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/main_nav_graph.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/nz/co/warehouseandroidtest/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/ExampleUnitTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,11 +72,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="nz.co.warehouseandroidtest.main" />
       <recent name="nz.co.warehouseandroidtest.search.presentation.ui.adapter" />
       <recent name="nz.co.warehouseandroidtest.common" />
     </key>
@@ -144,14 +97,62 @@
       <recent name="nz.co.warehouseandroidtest.search.data.remote" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest" />
       <recent name="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common" />
       <recent name="$PROJECT_DIR$/app/src/main/res" />
       <recent name="$PROJECT_DIR$/app/src/main/res/anim" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android JUnit.MainUseCaseTest">
+    <configuration name="MainRemoteDataSourceTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nz.co.warehouseandroidtest.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nz.co.warehouseandroidtest.main" />
+      <option name="MAIN_CLASS_NAME" value="nz.co.warehouseandroidtest.main.MainRemoteDataSourceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainRepositoryTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nz.co.warehouseandroidtest.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nz.co.warehouseandroidtest.main" />
+      <option name="MAIN_CLASS_NAME" value="nz.co.warehouseandroidtest.main.MainRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainUseCaseTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nz.co.warehouseandroidtest.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nz.co.warehouseandroidtest.main" />
+      <option name="MAIN_CLASS_NAME" value="nz.co.warehouseandroidtest.main.MainUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -210,6 +211,13 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.MainUseCaseTest" />
+        <item itemvalue="Android JUnit.MainRepositoryTest" />
+        <item itemvalue="Android JUnit.MainRemoteDataSourceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -272,34 +280,34 @@
       <screen x="83" y="25" width="1597" height="1025" />
     </state>
     <state x="739" y="306" key="AndroidProcessChooserDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623399687920" />
-    <state width="1552" height="342" key="GridCell.Tab.0.bottom" timestamp="1623400136567">
-      <screen x="83" y="25" width="1597" height="1025" />
+    <state width="1552" height="276" key="GridCell.Tab.0.bottom" timestamp="1623456478291">
+      <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705108" />
     <state width="1552" height="401" key="GridCell.Tab.0.bottom/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614120" />
     <state width="1552" height="342" key="GridCell.Tab.0.bottom/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136567" />
-    <state width="1552" height="611" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623387993902" />
-    <state width="1552" height="342" key="GridCell.Tab.0.center" timestamp="1623400136566">
-      <screen x="83" y="25" width="1597" height="1025" />
+    <state width="1552" height="276" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623456478291" />
+    <state width="1552" height="276" key="GridCell.Tab.0.center" timestamp="1623456478289">
+      <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705107" />
     <state width="1552" height="401" key="GridCell.Tab.0.center/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614118" />
     <state width="1552" height="342" key="GridCell.Tab.0.center/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136566" />
-    <state width="1552" height="611" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623387993901" />
-    <state width="1552" height="342" key="GridCell.Tab.0.left" timestamp="1623400136565">
-      <screen x="83" y="25" width="1597" height="1025" />
+    <state width="1552" height="276" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623456478289" />
+    <state width="1552" height="276" key="GridCell.Tab.0.left" timestamp="1623456478288">
+      <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705106" />
     <state width="1552" height="401" key="GridCell.Tab.0.left/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614118" />
     <state width="1552" height="342" key="GridCell.Tab.0.left/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136565" />
-    <state width="1552" height="611" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623387993900" />
-    <state width="1552" height="342" key="GridCell.Tab.0.right" timestamp="1623400136566">
-      <screen x="83" y="25" width="1597" height="1025" />
+    <state width="1552" height="276" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623456478288" />
+    <state width="1552" height="276" key="GridCell.Tab.0.right" timestamp="1623456478290">
+      <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705107" />
     <state width="1552" height="401" key="GridCell.Tab.0.right/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614119" />
     <state width="1552" height="342" key="GridCell.Tab.0.right/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136566" />
-    <state width="1552" height="611" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623387993901" />
+    <state width="1552" height="276" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623456478290" />
     <state width="1552" height="342" key="GridCell.Tab.1.bottom" timestamp="1623400136568">
       <screen x="83" y="25" width="1597" height="1025" />
     </state>
@@ -342,12 +350,12 @@
     </state>
     <state x="477" y="275" width="735" height="500" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1623383583977" />
     <state x="536" y="293" width="698" height="488" key="find.popup/83.25.1597.1025@83.25.1597.1025" timestamp="1623382585552" />
-    <state x="544" y="252" width="673" height="677" key="search.everywhere.popup" timestamp="1623396836070">
-      <screen x="83" y="25" width="1597" height="1025" />
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1623456397088">
+      <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="485" y="233" width="707" height="693" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1623393752006" />
     <state x="538" y="252" width="676" height="677" key="search.everywhere.popup/75.25.1605.1025@75.25.1605.1025" timestamp="1623392106004" />
     <state x="544" y="252" width="673" height="677" key="search.everywhere.popup/83.25.1597.1025@83.25.1597.1025" timestamp="1623396836070" />
-    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623388462380" />
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623456397088" />
   </component>
 </project>
