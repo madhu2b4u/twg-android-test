@@ -10,6 +10,9 @@ import nz.co.warehouseandroidtest.main.data.remote.source.MainRemoteDataSource
 import nz.co.warehouseandroidtest.main.di.MainDomainModule
 import nz.co.warehouseandroidtest.main.di.MainPresentationModule
 import nz.co.warehouseandroidtest.main.di.MainRemoteModule
+import nz.co.warehouseandroidtest.search.di.SearchDomainModule
+import nz.co.warehouseandroidtest.search.di.SearchPresentationModule
+import nz.co.warehouseandroidtest.search.di.SearchRemoteModule
 import javax.inject.Singleton
 
 @Singleton
@@ -19,7 +22,9 @@ import javax.inject.Singleton
         NetworkModule::class,
         FragmentBuilderModule::class,
         ActivityBuilderModule::class,
-        AppModule::class, MainRemoteModule::class,MainPresentationModule::class,MainDomainModule::class
+        AppModule::class,
+        MainRemoteModule::class,MainPresentationModule::class,MainDomainModule::class,
+        SearchRemoteModule::class, SearchPresentationModule::class, SearchDomainModule::class
     ]
 )
 interface AppComponent : AndroidInjector<WarehouseTestApp> {

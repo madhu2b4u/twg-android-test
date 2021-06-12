@@ -2,13 +2,11 @@ package nz.co.warehouseandroidtest.main.presentation.ui.fragments
 
 
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.util.Log
 import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.lifecycle.lifecycleScope
-import dagger.android.support.DaggerFragment
+import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_main.*
 import nz.co.warehouseandroidtest.R
 import nz.co.warehouseandroidtest.common.BaseFragment
@@ -37,12 +35,17 @@ class MainFragment : BaseFragment() {
             ViewModelProviders.of(requireActivity(), viewModelFactory)
                 .get(MainViewModel::class.java)
 
-        val userId = sharedPrefUtil.getString(USERID)
+        setViews()
 
-        if (userId.isNullOrEmpty()){
-            mMainViewModel.getUserId()
-        }
+        setObservers()
 
+    }
+
+    private fun setObservers() {
+        setUserObserver()
+    }
+
+    private fun setUserObserver(){
         mMainViewModel.userResult.observe(viewLifecycleOwner, Observer { event ->
             event.getContentIfNotHandled()?.let {
 
@@ -56,13 +59,39 @@ class MainFragment : BaseFragment() {
                     Status.SUCCESS -> {
                         val response = it.data
                         val id = response?.userID.toString()
-                        sharedPrefUtil.putString(USERID, id )
+                        tvUserId.text = id
+                        sharedPrefUtil.putString(USERID, id)
                     }
                 }
             }
         })
+    }
+
+    private fun setViews() {
+        val userId = sharedPrefUtil.getString(USERID)
+
+        if (userId.isNullOrEmpty()){
+            mMainViewModel.getUserId()
+        }else{
+            Log.e("userId", userId)
+            tvUserId.text = userId
+        }
+
+        tv_search.setOnClickListener {
+            view.let {
+                if (it != null) {
+                    Navigation.findNavController(it)
+                        .navigate(
+                            R.id.action_navigate_search
+                        )
+                }
+            }
+        }
+
+
 
     }
+
 
 
 
