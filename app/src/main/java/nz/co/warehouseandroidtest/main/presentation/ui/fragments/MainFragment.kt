@@ -59,8 +59,9 @@ class MainFragment : BaseFragment() {
                     Status.SUCCESS -> {
                         val response = it.data
                         val id = response?.userID.toString()
-                        tvUserId.text = id
+                        Log.e("userId", id)
                         sharedPrefUtil.putString(USERID, id)
+                        navigateToSearchProduct()
                     }
                 }
             }
@@ -74,22 +75,19 @@ class MainFragment : BaseFragment() {
             mMainViewModel.getUserId()
         }else{
             Log.e("userId", userId)
-            tvUserId.text = userId
+            navigateToSearchProduct()
         }
+    }
 
-        tv_search.setOnClickListener {
-            view.let {
-                if (it != null) {
-                    Navigation.findNavController(it)
-                        .navigate(
-                            R.id.action_navigate_search
-                        )
-                }
+    private fun navigateToSearchProduct(){
+        view.let {
+            if (it != null) {
+                Navigation.findNavController(it)
+                    .navigate(
+                        R.id.action_navigate_search
+                    )
             }
         }
-
-
-
     }
 
 

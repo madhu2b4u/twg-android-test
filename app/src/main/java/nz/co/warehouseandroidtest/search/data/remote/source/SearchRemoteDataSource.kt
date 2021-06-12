@@ -5,6 +5,6 @@ import nz.co.warehouseandroidtest.search.data.remote.models.SearchResponse
 
 interface SearchRemoteDataSource {
 
-    suspend fun getSearchResults(map :Map<String, Any>): SearchResponse
+    suspend fun getSearchResults(map : Map<String, Any>): SearchResponse
 
 }

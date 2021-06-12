@@ -1,68 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
     android:layout_height="match_parent">
 
-    <include layout="@layout/layout_toolbar"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:layout_marginEnd="@dimen/margin_10dp"
-        android:layout_marginStart="@dimen/margin_10dp"
-        android:background="@drawable/bg_rounded_corner"
-        android:layout_height="wrap_content">
+       <include layout="@layout/layout_toolbar"/>
 
-        <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="0dp"
-            android:padding="@dimen/margin_10dp"
-            android:id="@+id/etSearch"
-            android:imeOptions="actionSearch"
-            android:singleLine="true"
-            android:background="@color/transparent"
-            android:layout_marginStart="@dimen/margin_10dp"
-            android:layout_marginEnd="@dimen/margin_10dp"
-            android:hint="@string/search_product"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"/>
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           app:cardCornerRadius="@dimen/margin_10dp"
+           android:layout_margin="@dimen/margin_16dp"
+           android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_marginEnd="@dimen/margin_8dp"
-            android:id="@+id/ivSearch"
-            android:src="@drawable/baseline_search_black_36dp"
-            android:layout_height="wrap_content"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_height="wrap_content">
 
-    </LinearLayout>
+               <androidx.appcompat.widget.AppCompatEditText
+                   android:layout_width="0dp"
+                   android:padding="@dimen/margin_10dp"
+                   android:id="@+id/etSearch"
+                   android:focusable="auto"
+                   android:imeOptions="actionSearch"
+                   android:background="@color/transparent"
+                   android:singleLine="true"
+                   android:layout_marginEnd="@dimen/margin_10dp"
+                   android:hint="@string/search_product"
+                   android:layout_weight="1"
+                   android:layout_height="wrap_content"/>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="@dimen/margin_10"
-        android:layout_marginBottom="@dimen/margin_10dp"
-        android:layout_height="match_parent">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:id="@+id/rvSearchResult"
-            android:orientation="vertical"
-            tools:listitem="@layout/list_item_search_result"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:layout_height="match_parent"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:orientation="horizontal"
+                   android:divider="@color/black"
+                   android:showDividers="middle"
+                   android:layout_height="wrap_content">
 
 
+                   <ImageView
+                       android:layout_width="34dp"
+                       android:layout_marginEnd="@dimen/margin_8dp"
+                       android:id="@+id/ivSearch"
+                       android:src="@drawable/baseline_search_black_36dp"
+                       android:layout_height="34dp"/>
+
+
+                   <ImageView
+                       android:layout_width="34dp"
+                       android:layout_marginEnd="@dimen/margin_8dp"
+                       android:id="@+id/ivBarCode"
+                       android:padding="3dp"
+                       android:layout_marginStart="@dimen/margin_5dp"
+                       android:src="@drawable/ic_reader"
+                       android:layout_height="34dp"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+       </androidx.cardview.widget.CardView>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_marginStart="@dimen/margin_8dp"
+           android:layout_marginEnd="@dimen/margin_8dp"
+           android:layout_height="match_parent">
+
+           <com.google.android.material.progressindicator.CircularProgressIndicator
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/rvLoader"
+               android:visibility="gone"
+               android:indeterminate="true" />
+
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:id="@+id/rvSearchResult"
+               android:orientation="vertical"
+               android:visibility="gone"
+               tools:listitem="@layout/list_item_search_result"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+               android:layout_height="match_parent"/>
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               app:cardCornerRadius="@dimen/margin_10dp"
+               android:visibility="gone"
+               android:id="@+id/cardNoImage"
+               android:layout_marginStart="@dimen/margin_10dp"
+               android:layout_marginEnd="@dimen/margin_10dp"
+               android:layout_marginBottom="@dimen/margin_10dp"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:padding="@dimen/margin_10dp"
+                   android:src="@drawable/empty_result"
+                   android:visibility="gone"
+                   android:layout_height="wrap_content"/>
+
+
+           </androidx.cardview.widget.CardView>
 
 
 
-    </LinearLayout>
+
+
+       </LinearLayout>
 
 
 
-</LinearLayout>
+   </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

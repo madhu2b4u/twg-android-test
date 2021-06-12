@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import nz.co.warehouseandroidtest.common.Event
 import nz.co.warehouseandroidtest.common.Result
+import nz.co.warehouseandroidtest.common.SingleLiveData
 import nz.co.warehouseandroidtest.search.data.remote.models.SearchResponse
 import nz.co.warehouseandroidtest.search.domain.SearchUseCase
 import javax.inject.Inject

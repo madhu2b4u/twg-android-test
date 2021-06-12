@@ -44,10 +44,16 @@ class SearchResultsAdapter() : RecyclerView.Adapter<SearchResultsAdapter.SearchR
     inner class SearchResultsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(product: Product, position: Int) {
             with(itemView) {
-                clickFunction?.invoke(product,position)
-                tvProductDesc.text = product.description
+                setOnClickListener {
+                    clickFunction?.invoke(product,position)
+                }
+
+                if (!TextUtils.isEmpty(product.description)) {
+                    tvProductDesc.text = product.description
+                }
+
                 if (!TextUtils.isEmpty(product.imageURL)) {
-                    Glide.with(context).load(product.imageURL).error(R.drawable.image_placeholder).into(ivProduct)//in case of error this is displayed
+                    Glide.with(context).load(product.imageURL).error(R.drawable.image_placeholder).into(ivProduct)
                 }
             }
         }
