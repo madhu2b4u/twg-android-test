@@ -1,50 +1,33 @@
 package nz.co.warehouseandroidtest.productdetail.presentation.viewmodel
 
-import androidx.lifecycle.MediatorLiveData
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.liveData
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import kotlinx.coroutines.launch
+import nz.co.warehouseandroidtest.common.Event
+import nz.co.warehouseandroidtest.common.Result
+import nz.co.warehouseandroidtest.productdetail.data.models.ProductDetailsResponse
 import javax.inject.Inject
 import nz.co.warehouseandroidtest.productdetail.domain.ProductUseCase
+import nz.co.warehouseandroidtest.search.data.remote.models.SearchResponse
 
 
 class ProductViewModel @Inject constructor(
     private val mProductUseCase: ProductUseCase
 ) : ViewModel() {
 
+    val barcode = MutableLiveData<String>()
 
-//code to be deleted
-//if you don't need to change your source you can do like this
-//    val articleResult = liveData {
-//        emitSource(getArticlesUseCase.getArticles())
-//    }
+    fun setBarcode(msg:String){
+        barcode.value = msg
+    }
 
-//
-//    val articleResult = MediatorLiveData<Result<List<Article>>>()
-//
-//
-//    init {
-//        loadArticles(false)
-//    }
-//
-//    fun loadArticles(mustFetchFromNetwork: Boolean) {
-//        viewModelScope.launch {
-//            articleResult.addSource(getArticlesUseCase.getArticles(mustFetchFromNetwork)) {
-//                articleResult.value = it
-//            }
-//        }
-//    }
-//
-//    val singleArticleResult = MediatorLiveData<Result<Article>>()
-//
-//    fun loadSingleArticle(id: Long) {
-//        viewModelScope.launch {
-//            singleArticleResult.addSource(getSingleArticleUseCase.getArticleById(id)) {
-//                singleArticleResult.value = it
-//            }
-//        }
-//    }
+    val productResult = MediatorLiveData<Event<Result<ProductDetailsResponse>>>()
 
+    fun getProduct(map : Map<String, Any>) {
+        viewModelScope.launch {
+            productResult.addSource(mProductUseCase.getProductPrice(map)) {
+                productResult.value = Event(it)
+            }
+        }
+    }
 
 }

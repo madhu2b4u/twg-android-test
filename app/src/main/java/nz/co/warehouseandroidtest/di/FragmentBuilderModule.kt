@@ -17,4 +17,5 @@ abstract class FragmentBuilderModule {
 
     @ContributesAndroidInjector
     abstract fun contributesProductFragment(): ProductFragment
+
 }

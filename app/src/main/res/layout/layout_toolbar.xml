@@ -5,8 +5,7 @@
     android:background="@color/colorPrimary"
     android:gravity="center"
     android:orientation="horizontal"
-    android:layout_height="56dp">
-
+    android:layout_height="65dp">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -24,8 +23,7 @@
         android:layout_marginStart="@dimen/margin_10dp"
         android:gravity="center|start"
         android:text="@string/the_warehouse_group"
-        android:textSize="@dimen/text_18sp"
+        android:textSize="@dimen/text_20sp"
         android:layout_height="match_parent"/>
-
 
 </LinearLayout>

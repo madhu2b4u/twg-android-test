@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="nz.co.warehouseandroidtest">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -13,11 +16,14 @@
     <application
         android:name=".WarehouseTestApp"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".barcode.ScanBarcodeActivity"></activity>
+        <activity android:name=".productdetail.presentation.ui.activity.ProductDetailActivity" />
         <activity android:name=".main.presentation.ui.activity.MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
