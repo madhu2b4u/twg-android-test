@@ -9,10 +9,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_main.*
 import nz.co.warehouseandroidtest.R
-import nz.co.warehouseandroidtest.common.BaseFragment
-import nz.co.warehouseandroidtest.common.Status
-import nz.co.warehouseandroidtest.common.USERID
-import nz.co.warehouseandroidtest.common.ViewModelFactory
+import nz.co.warehouseandroidtest.common.*
 import nz.co.warehouseandroidtest.main.presentation.viewmodel.MainViewModel
 import javax.inject.Inject
 
@@ -54,7 +51,7 @@ class MainFragment : BaseFragment() {
                         //TODO
                     }
                     Status.ERROR -> {
-                        //TODO
+                        activity?.snackBarError(it.message.toString())
                     }
                     Status.SUCCESS -> {
                         val response = it.data
@@ -70,12 +67,8 @@ class MainFragment : BaseFragment() {
 
     private fun setViews() {
         val userId = sharedPrefUtil.getString(USERID)
-
         if (userId.isNullOrEmpty()){
             mMainViewModel.getUserId()
-        }else{
-            Log.e("userId", userId)
-            navigateToSearchProduct()
         }
     }
 

@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.pd.chocobar.ChocoBar
 
 fun Activity.loge(message: String){
     Log.e(this::class.java.simpleName, message)
@@ -23,8 +24,28 @@ fun Fragment.hideKeyboard() {
     view?.let { activity?.hideKeyboard(it) }
 }
 
-fun Activity.hideKeyboard() {
-    hideKeyboard(currentFocus ?: View(this))
+fun Activity.snackBarSuccess(message: String){
+    ChocoBar.builder().setActivity(this)
+        .setText(message)
+        .setDuration(ChocoBar.LENGTH_SHORT)
+        .green()
+        .show();
+}
+
+fun Activity.snackBarInfo(message: String){
+    ChocoBar.builder().setActivity(this)
+        .setText(message)
+        .setDuration(ChocoBar.LENGTH_SHORT)
+        .orange()
+        .show();
+}
+
+fun Activity.snackBarError(message: String){
+    ChocoBar.builder().setActivity(this)
+        .setText(message)
+        .setDuration(ChocoBar.LENGTH_SHORT)
+        .red()
+        .show();
 }
 
 fun Context.hideKeyboard(view: View) {

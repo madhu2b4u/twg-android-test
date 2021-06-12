@@ -75,7 +75,7 @@ class ProductFragment : BaseFragment() {
                 //TODO
             }
             Status.ERROR -> {
-                //TODO
+                activity?.snackBarError(it.message.toString())
             }
             Status.SUCCESS -> {
                 val response = it.data?.productDetail

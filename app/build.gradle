@@ -75,6 +75,9 @@ dependencies {
     implementation 'cn.yipianfengye.android:zxing-library:2.2'
     implementation 'jp.wasabeef:glide-transformations:2.0.1'
 
+    implementation 'com.github.Pradyuman7:ChocoBar:V1.0'
+
+
     implementation libraries.dagger
     implementation libraries.daggerSupport
     kapt libraries.daggerProcessor
