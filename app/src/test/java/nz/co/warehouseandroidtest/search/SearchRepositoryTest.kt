@@ -1,4 +1,4 @@
-package nz.co.warehouseandroidtest.main
+package nz.co.warehouseandroidtest.search
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -7,9 +7,9 @@ import nz.co.warehouseandroidtest.LiveDataTestUtil
 import nz.co.warehouseandroidtest.MainCoroutineRule
 import nz.co.warehouseandroidtest.TestUtils
 import nz.co.warehouseandroidtest.common.Status
-import nz.co.warehouseandroidtest.main.data.remote.source.MainRemoteDataSource
-import nz.co.warehouseandroidtest.main.data.repository.MainRepository
-import nz.co.warehouseandroidtest.main.data.repository.MainRepositoryImpl
+import nz.co.warehouseandroidtest.search.data.remote.source.SearchRemoteDataSource
+import nz.co.warehouseandroidtest.search.data.repository.SearchRepository
+import nz.co.warehouseandroidtest.search.data.repository.SearchRepositoryImpl
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -19,7 +19,7 @@ import org.mockito.MockitoAnnotations
 
 
 @ExperimentalCoroutinesApi
-class MainRepositoryTest {
+class SearchRepositoryTest {
 
     @ExperimentalCoroutinesApi
     @get:Rule
@@ -29,31 +29,35 @@ class MainRepositoryTest {
     @get:Rule
     var instantExecutorRule = InstantTaskExecutorRule()
 
-    lateinit var repository: MainRepository
+    lateinit var repository: SearchRepository
 
     @Mock
-    lateinit var remoteDataSource: MainRemoteDataSource
+    lateinit var remoteDataSource: SearchRemoteDataSource
+
+    private val response = TestUtils.fakeSearchResult
+
+    private val request = TestUtils.mapSearchQuery("bulb")
 
     @Before
     fun init() {
         MockitoAnnotations.initMocks(this)
-        repository = MainRepositoryImpl(remoteDataSource)
+        repository = SearchRepositoryImpl(remoteDataSource)
     }
 
     @Test
-    fun testGetUserFromAPI() = mainCoroutineRule.runBlockingTest {
-        Mockito.`when`(remoteDataSource.getUserId()).thenReturn(TestUtils.fakeUserResponse)
-        val result = repository.getUserId()
+    fun testSearchFromAPI() = mainCoroutineRule.runBlockingTest {
+        Mockito.`when`(remoteDataSource.getSearchResults(request)).thenReturn(response)
+        val result = repository.getSearchResults(request)
         assert(LiveDataTestUtil.getValue(result).status == Status.LOADING)
         assert(LiveDataTestUtil.getValue(result).status == Status.SUCCESS)
-        assert(LiveDataTestUtil.getValue(result).data == TestUtils.fakeUserResponse)
+        assert(LiveDataTestUtil.getValue(result).data == response)
     }
 
 
     @Test(expected = Exception::class)
-    fun testGetUserThrowException() = mainCoroutineRule.runBlockingTest {
-        Mockito.doThrow(Exception("error")).`when`(remoteDataSource.getUserId())
-        repository.getUserId()
+    fun testGetSearchResultThrowException() = mainCoroutineRule.runBlockingTest {
+        Mockito.doThrow(Exception("error")).`when`(remoteDataSource.getSearchResults(request))
+        repository.getSearchResults(request)
 
     }
 

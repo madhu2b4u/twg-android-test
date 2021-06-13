@@ -2,6 +2,16 @@ package nz.co.warehouseandroidtest.common
 
 data class Result<out T>(val status: Status, val data: T?, val message: String?) {
 
+    var exception: Exception? = null
+
+    constructor(status: Status, data: T?, message: String? = null, exception: Exception?) : this(
+        status,
+        data,
+        message ?: ""
+    ) {
+        this.exception = exception
+    }
+
     companion object {
         fun <T> success(data: T?): Result<T> {
             return Result(Status.SUCCESS, data, null)
