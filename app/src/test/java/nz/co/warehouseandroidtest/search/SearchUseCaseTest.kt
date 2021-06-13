@@ -1,4 +1,4 @@
-package nz.co.warehouseandroidtest.main
+package nz.co.warehouseandroidtest.search
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.LiveData
@@ -9,17 +9,17 @@ import kotlinx.coroutines.test.runBlockingTest
 import nz.co.warehouseandroidtest.LiveDataTestUtil
 import nz.co.warehouseandroidtest.MainCoroutineRule
 import nz.co.warehouseandroidtest.TestUtils
-import nz.co.warehouseandroidtest.common.Status
 import nz.co.warehouseandroidtest.common.Result
-import nz.co.warehouseandroidtest.main.data.models.UserResponse
-import nz.co.warehouseandroidtest.main.data.repository.MainRepository
-import nz.co.warehouseandroidtest.main.domain.MainUseCase
-import nz.co.warehouseandroidtest.main.domain.MainUseCaseImpl
+import nz.co.warehouseandroidtest.common.Status
+import nz.co.warehouseandroidtest.search.data.remote.models.SearchResponse
+import nz.co.warehouseandroidtest.search.data.repository.SearchRepository
+import nz.co.warehouseandroidtest.search.domain.SearchUseCase
+import nz.co.warehouseandroidtest.search.domain.SearchUseCaseImpl
 import org.junit.Rule
 import org.junit.Test
 
 @ExperimentalCoroutinesApi
-class MainUseCaseTest {
+class SearchUseCaseTest {
 
     @ExperimentalCoroutinesApi
     @get:Rule
@@ -29,23 +29,27 @@ class MainUseCaseTest {
     @get:Rule
     var instantExecutorRule = InstantTaskExecutorRule()
 
-    lateinit var useCase: MainUseCase
+    lateinit var useCase: SearchUseCase
 
-    lateinit var repository: MainRepository
+    lateinit var repository: SearchRepository
+
+    private val response = TestUtils.fakeSearchResult
+
+    private val request = TestUtils.mapSearchQuery("bulb")
 
     @Test
-    fun testUserLoadingData() = mainCoroutineRule.runBlockingTest {
+    fun testSearchLoadingData() = mainCoroutineRule.runBlockingTest {
         repository = mock {
-            onBlocking { getUserId() } doReturn object :
-                LiveData<Result<UserResponse>>() {
+            onBlocking { getSearchResults(request) } doReturn object :
+                LiveData<Result<SearchResponse>>() {
                 init {
                     value = Result.loading()
                 }
             }
         }
-        useCase = MainUseCaseImpl(repository)
+        useCase = SearchUseCaseImpl(repository)
 
-        val result = useCase.getUserId()
+        val result = useCase.getSearchResults(request)
         result.observeForever { }
         assert(LiveDataTestUtil.getValue(result).status == Status.LOADING)
 
@@ -53,41 +57,41 @@ class MainUseCaseTest {
 
 
     @Test
-    fun testUserSuccessData() = mainCoroutineRule.runBlockingTest {
+    fun testSearchSuccessData() = mainCoroutineRule.runBlockingTest {
         repository = mock {
-            onBlocking { getUserId() } doReturn object :
-                LiveData<Result<UserResponse>>() {
+            onBlocking { getSearchResults(request)} doReturn object :
+                LiveData<Result<SearchResponse>>() {
                 init {
-                    value = Result.success(TestUtils.fakeUserResponse)
+                    value = Result.success(response)
                 }
             }
         }
-        useCase = MainUseCaseImpl(repository)
+        useCase = SearchUseCaseImpl(repository)
 
-        val result = useCase.getUserId()
+        val result = useCase.getSearchResults(request)
 
         result.observeForever { }
 
         assert(
             LiveDataTestUtil.getValue(result).status == Status.SUCCESS && LiveDataTestUtil.getValue(
                 result
-            ).data == TestUtils.fakeUserResponse
+            ).data == response
         )
 
     }
 
     @Test
-    fun testUserErrorData() = mainCoroutineRule.runBlockingTest {
+    fun testSearchErrorData() = mainCoroutineRule.runBlockingTest {
         repository = mock {
-            onBlocking { getUserId() } doReturn object :
-                LiveData<Result<UserResponse>>() {
+            onBlocking { getSearchResults(request) } doReturn object :
+                LiveData<Result<SearchResponse>>() {
                 init {
                     value = Result.error("error")
                 }
             }
         }
-        useCase = MainUseCaseImpl(repository)
-        val result = useCase.getUserId()
+        useCase = SearchUseCaseImpl(repository)
+        val result = useCase.getSearchResults(request)
         result.observeForever { }
         assert(
             LiveDataTestUtil.getValue(result).status == Status.ERROR && LiveDataTestUtil.getValue(

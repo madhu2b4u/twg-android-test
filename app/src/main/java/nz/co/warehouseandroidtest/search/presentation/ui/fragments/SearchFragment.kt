@@ -3,6 +3,7 @@ package nz.co.warehouseandroidtest.search.presentation.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
@@ -119,6 +120,7 @@ class SearchFragment : BaseFragment() {
         rvSearchResult.adapter = searchResultsAdapter
 
         searchResultsAdapter.clickListener { product, i ->
+            Log.e("barcode", product.barcode)
             val intent = Intent()
             intent.setClass(requireActivity(), ProductDetailActivity::class.java)
             intent.putExtra("barcode", product.barcode)
