@@ -6,6 +6,7 @@ import dagger.android.support.DaggerAppCompatActivity
 import nz.co.warehouseandroidtest.R
 import nz.co.warehouseandroidtest.common.ViewModelFactory
 import nz.co.warehouseandroidtest.productdetail.presentation.viewmodel.ProductViewModel
+import nz.co.warehouseandroidtest.search.presentation.ui.fragments.BARCODE
 import javax.inject.Inject
 
 class ProductDetailActivity : DaggerAppCompatActivity() {
@@ -20,7 +21,7 @@ class ProductDetailActivity : DaggerAppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_detail)
 
-        val barcodeResult = intent.getStringExtra("barcode")
+        val barcodeResult = intent.getStringExtra(BARCODE)
 
         mProductViewModel  = ViewModelProviders.of(this, viewModelFactory)
             .get(ProductViewModel::class.java)

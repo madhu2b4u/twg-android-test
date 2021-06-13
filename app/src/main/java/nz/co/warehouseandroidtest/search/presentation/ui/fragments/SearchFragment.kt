@@ -20,7 +20,7 @@ import nz.co.warehouseandroidtest.search.presentation.ui.adapter.SearchResultsAd
 import nz.co.warehouseandroidtest.search.presentation.viewmodel.SearchViewModel
 import javax.inject.Inject
 
-
+const val BARCODE = "barcode"
 class SearchFragment : BaseFragment() {
 
     @Inject
@@ -93,6 +93,7 @@ class SearchFragment : BaseFragment() {
     private fun setResultData(searchResult: SearchResponse) {
         val ifFound: String = searchResult.found
         if (ifFound == "Y") {
+            data.clear()
             totalItemNum = searchResult.hitCount.toInt()
             rvLoader.visibility = View.GONE
             rvSearchResult.visibility = View.VISIBLE
@@ -120,10 +121,10 @@ class SearchFragment : BaseFragment() {
         rvSearchResult.adapter = searchResultsAdapter
 
         searchResultsAdapter.clickListener { product, i ->
-            Log.e("barcode", product.barcode)
+            Log.e(BARCODE, product.barcode)
             val intent = Intent()
             intent.setClass(requireActivity(), ProductDetailActivity::class.java)
-            intent.putExtra("barcode", product.barcode)
+            intent.putExtra(BARCODE, product.barcode)
             startActivity(intent)
         }
 

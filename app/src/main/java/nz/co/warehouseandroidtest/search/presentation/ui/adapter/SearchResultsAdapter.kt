@@ -23,12 +23,12 @@ class SearchResultsAdapter() : RecyclerView.Adapter<SearchResultsAdapter.SearchR
     }
 
     fun clearItems(){
-        this.listOfProducts.clear()
+        listOfProducts.clear()
         notifyDataSetChanged()
     }
 
     fun updateProducts(products: ArrayList<Product>){
-        this.listOfProducts.addAll(products)
+        listOfProducts.addAll(products)
         notifyDataSetChanged()
     }
 
