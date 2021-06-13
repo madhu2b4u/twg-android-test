@@ -77,7 +77,6 @@ dependencies {
 
     implementation 'com.github.Pradyuman7:ChocoBar:V1.0'
 
-
     implementation libraries.dagger
     implementation libraries.daggerSupport
     kapt libraries.daggerProcessor

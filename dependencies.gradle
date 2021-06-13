@@ -45,9 +45,7 @@ ext {
             extJunit            : '1.1.1',
             testRunner          : '1.2.0',
 
-            truth               : '0.42',
             espresso            : '3.3.0-alpha01',
-            dexter              : '5.0.0',
             stackimageview      : '0.0.6',
             testng              : '6.9.6',
             assertjcore         : '3.8.0',

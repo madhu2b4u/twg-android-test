@@ -3,7 +3,6 @@ package nz.co.warehouseandroidtest.barcode
 import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.uuzuche.lib_zxing.activity.CaptureFragment
 import com.uuzuche.lib_zxing.activity.CodeUtils
@@ -11,6 +10,7 @@ import com.uuzuche.lib_zxing.activity.CodeUtils.AnalyzeCallback
 import com.uuzuche.lib_zxing.activity.CodeUtils.isLightEnable
 import kotlinx.android.synthetic.main.activity_scan_barcode.*
 import nz.co.warehouseandroidtest.R
+import nz.co.warehouseandroidtest.common.snackBarError
 import nz.co.warehouseandroidtest.productdetail.presentation.ui.activity.ProductDetailActivity
 
 class ScanBarcodeActivity : AppCompatActivity() {
@@ -23,7 +23,7 @@ class ScanBarcodeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scan_barcode)
-
+      //  PermissionUtils.requestCameraPermission(this)
         iv_flashlight.setImageDrawable(getDrawable(R.mipmap.ic_flash_off_black_24dp))
         iv_flashlight.setOnClickListener {
             toggleFlashlight()
@@ -48,11 +48,7 @@ class ScanBarcodeActivity : AppCompatActivity() {
         }
 
         override fun onAnalyzeFailed() {
-            Toast.makeText(
-                this@ScanBarcodeActivity,
-                "Oops, bar code analysis failed!",
-                Toast.LENGTH_SHORT
-            )
+            snackBarError("Oops, bar code analysis failed!")
             finish()
         }
     }

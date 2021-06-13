@@ -22,7 +22,8 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".barcode.ScanBarcodeActivity"></activity>
+        <activity android:name=".permission.PermissionActivity"></activity>
+        <activity android:name=".barcode.ScanBarcodeActivity" />
         <activity android:name=".productdetail.presentation.ui.activity.ProductDetailActivity" />
         <activity android:name=".main.presentation.ui.activity.MainActivity" />
         <activity android:name=".SplashActivity">
