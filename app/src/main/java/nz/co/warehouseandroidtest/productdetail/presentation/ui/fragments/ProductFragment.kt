@@ -72,22 +72,38 @@ class ProductFragment : BaseFragment() {
     private fun eventObserver(it: Result<ProductDetailsResponse>): Unit? {
         return when (it.status) {
             Status.LOADING -> {
-                //TODO
+                rvLoader.visibility = View.VISIBLE
             }
             Status.ERROR -> {
                 activity?.snackBarError(it.message.toString())
+                rvLoader.visibility = View.GONE
             }
             Status.SUCCESS -> {
+                rvLoader.visibility = View.GONE
                 val response = it.data?.productDetail
-                response?.let { it1 -> setProductViews(it1) }
+                if (it.data?.found == "Y"){
+                    llNotInStock.visibility = View.GONE
+                    llInStock.visibility = View.VISIBLE
+                    response?.let { it1 -> setProductViews(it1) }
+                }else{
+                    setProductNotFoundView()
+                }
+
             }
         }
     }
 
+    private fun setProductNotFoundView() {
+        llNotInStock.visibility = View.VISIBLE
+        llInStock.visibility = View.GONE
+    }
+
     private fun setProductViews(response: ProductDetail) {
+
         Glide.with(this).load(response.imageURL).error(R.drawable.image_placeholder).into(ivProductImage)
         tvBarcode.text = response.barcode
         tvPrice.text = "$"+response.price.price
+        tvDesc.text = response.description
 
         if (response.price.type == "CLR") {
             ivClearance.visibility = View.VISIBLE

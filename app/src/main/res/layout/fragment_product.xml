@@ -4,75 +4,134 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:gravity="center_horizontal"
     android:background="@color/white"
     android:layout_height="match_parent">
 
     <include layout="@layout/layout_toolbar"/>
 
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvLoader"
+        android:visibility="visible"
+        android:indeterminate="true" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="@dimen/margin_16dp"
-        android:gravity="center"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:layout_width="100dp"
-            android:id="@+id/ivProductImage"
-            android:layout_height="100dp"/>
+        android:visibility="gone"
+        android:id="@+id/llInStock"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_16dp"
             android:gravity="center"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/margin_10dp"
-            android:layout_marginBottom="@dimen/margin_10dp"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:id="@+id/tvPrice"
-                android:textColor="@color/black"
-                android:fontFamily="@font/roboto_medium"
-                android:textSize="@dimen/text_20sp"
-                tools:text="$16"
-                android:padding="@dimen/margin_10dp"
-                android:layout_height="wrap_content"/>
-
             <ImageView
-                android:id="@+id/ivClearance"
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:src="@mipmap/ic_clearance"
-                android:visibility="gone"/>
+                android:layout_width="100dp"
+                android:id="@+id/ivProductImage"
+                android:layout_height="100dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvPrice"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="@dimen/text_20sp"
+                    tools:text="$16"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/ivClearance"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/ic_clearance"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="@dimen/text_18sp"
+            android:paddingStart="@dimen/margin_10dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvDesc"
+            android:padding="@dimen/margin_10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/text_16sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/barcode"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="@dimen/text_18sp"
+            android:paddingStart="@dimen/margin_10dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/tvBarcode"
+            android:padding="@dimen/margin_10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/text_16sp"
+            android:layout_height="wrap_content"/>
 
 
     </LinearLayout>
 
-    <View
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"/>
+        android:orientation="vertical"
+        android:id="@+id/llNotInStock"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:text="@string/barcode"
-        android:textColor="@color/black"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/roboto_medium"
-        android:textSize="@dimen/text_18sp"
-        android:paddingStart="@dimen/margin_10dp"
-        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:id="@+id/tvBarcode"
-        android:text="$15"
-        android:padding="@dimen/margin_10dp"
-        android:fontFamily="@font/roboto_regular"
-        android:textSize="@dimen/text_16sp"
-        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/not_in_stock"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="@dimen/text_18sp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
 
 </LinearLayout>

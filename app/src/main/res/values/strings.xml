@@ -7,4 +7,6 @@
     <string name="fetching_user_details">Fetching user details</string>
     <string name="scan_barcode">Scan Barcode</string>
     <string name="position_barcode_inside_window_below">Position barcode inside window below</string>
+    <string name="description">Description</string>
+    <string name="not_in_stock">Product not in stock</string>
 </resources>

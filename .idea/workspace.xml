@@ -10,25 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71df0f53-9c32-4229-893c-d3ba8ff6860d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainViewModelTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/productdetail/ProductRemoteDataSourceTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/productdetail/ProductRepositoryTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/productdetail/ProductUseCaseTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/productdetail/ProductViewModelTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/search/SearchRemoteDataSourceTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/search/SearchRepositoryTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/search/SearchUseCaseTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/search/SearchViewModelTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/Result.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common/Result.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/LiveDataTestUtil.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/LiveDataTestUtil.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/TestUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/TestUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainRepositoryTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainRepositoryTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainUseCaseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest/main/MainUseCaseTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/presentation/ui/fragments/ProductFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/presentation/ui/fragments/ProductFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_product.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +110,7 @@
       <recent name="nz.co.warehouseandroidtest.productdetail.presentation.ui.activity" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.ProductViewModelTest">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="ProductRemoteDataSourceTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <extension name="coverage">
@@ -326,45 +313,45 @@
     <state x="461" y="296" key="AndroidCreateResourceFileDialog/75.25.1605.1025@75.25.1605.1025" timestamp="1623392161523" />
     <state x="467" y="296" key="AndroidCreateResourceFileDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623398420601" />
     <state x="469" y="296" key="AndroidCreateResourceFileDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623386901605" />
-    <state x="745" y="388" key="AndroidCreateXmlResourceDialog" timestamp="1623474318188">
+    <state x="745" y="388" key="AndroidCreateXmlResourceDialog" timestamp="1623544968355">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="738" y="388" key="AndroidCreateXmlResourceDialog/75.25.1605.1025@75.25.1605.1025" timestamp="1623392471770" />
     <state x="743" y="388" key="AndroidCreateXmlResourceDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623447249793" />
-    <state x="745" y="388" key="AndroidCreateXmlResourceDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623474318188" />
+    <state x="745" y="388" key="AndroidCreateXmlResourceDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623544968355" />
     <state x="741" y="306" key="AndroidProcessChooserDialog" timestamp="1623538720436">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="739" y="306" key="AndroidProcessChooserDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623399687920" />
     <state x="741" y="306" key="AndroidProcessChooserDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623538720436" />
-    <state width="1552" height="401" key="GridCell.Tab.0.bottom" timestamp="1623543789123">
+    <state width="1552" height="398" key="GridCell.Tab.0.bottom" timestamp="1623544846599">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705108" />
     <state width="1552" height="401" key="GridCell.Tab.0.bottom/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614120" />
     <state width="1552" height="342" key="GridCell.Tab.0.bottom/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136567" />
-    <state width="1552" height="401" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623543789123" />
-    <state width="1552" height="401" key="GridCell.Tab.0.center" timestamp="1623543789123">
+    <state width="1552" height="398" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623544846599" />
+    <state width="1552" height="398" key="GridCell.Tab.0.center" timestamp="1623544846598">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705107" />
     <state width="1552" height="401" key="GridCell.Tab.0.center/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614118" />
     <state width="1552" height="342" key="GridCell.Tab.0.center/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136566" />
-    <state width="1552" height="401" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623543789123" />
-    <state width="1552" height="401" key="GridCell.Tab.0.left" timestamp="1623543789122">
+    <state width="1552" height="398" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623544846598" />
+    <state width="1552" height="398" key="GridCell.Tab.0.left" timestamp="1623544846598">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705106" />
     <state width="1552" height="401" key="GridCell.Tab.0.left/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614118" />
     <state width="1552" height="342" key="GridCell.Tab.0.left/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136565" />
-    <state width="1552" height="401" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623543789122" />
-    <state width="1552" height="401" key="GridCell.Tab.0.right" timestamp="1623543789123">
+    <state width="1552" height="398" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623544846598" />
+    <state width="1552" height="398" key="GridCell.Tab.0.right" timestamp="1623544846599">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705107" />
     <state width="1552" height="401" key="GridCell.Tab.0.right/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614119" />
     <state width="1552" height="342" key="GridCell.Tab.0.right/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136566" />
-    <state width="1552" height="401" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623543789123" />
+    <state width="1552" height="398" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623544846599" />
     <state width="1552" height="342" key="GridCell.Tab.1.bottom" timestamp="1623538789389">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
@@ -424,13 +411,13 @@
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="645" y="173" key="refactoring.ChangeSignatureDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623476139894" />
-    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1623543084868">
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1623545131970">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="485" y="233" width="707" height="693" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1623393752006" />
     <state x="538" y="252" width="676" height="677" key="search.everywhere.popup/75.25.1605.1025@75.25.1605.1025" timestamp="1623392106004" />
     <state x="544" y="252" width="673" height="677" key="search.everywhere.popup/83.25.1597.1025@83.25.1597.1025" timestamp="1623396836070" />
-    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623543084868" />
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623545131970" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
