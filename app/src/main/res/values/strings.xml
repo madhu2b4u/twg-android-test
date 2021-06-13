@@ -2,6 +2,7 @@
     <string name="app_name">WarehouseAndroidTest</string>
     <string name="the_warehouse_group">The Warehouse Group</string>
     <string name="search_product">Search/Scan Product</string>
+    <string name="search_product_title">Search Product</string>
     <string name="product_details">Product Details</string>
     <string name="barcode">Barcode</string>
     <string name="fetching_user_details">Fetching user details</string>

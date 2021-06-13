@@ -10,17 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71df0f53-9c32-4229-893c-d3ba8ff6860d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/permission/PermissionActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/permission/PermissionChecker.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_permisson.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/presentation/ui/activity/ProductDetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/productdetail/presentation/ui/activity/ProductDetailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/barcode/ScanBarcodeActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/barcode/ScanBarcodeActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/ui/activity/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/ui/activity/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/dependencies.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6P_API_26" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="8AEY0JNJN" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -60,13 +68,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
+    <property name="DEBUGGABLE_DEVICE" value="google-pixel_3_xl-8AEY0JNJN" />
     <property name="DEBUGGABLE_PROCESS" value="nz.co.warehouseandroidtest" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/permisson" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -90,15 +99,18 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
+    <key name="android.template.1958564105">
+      <recent name="nz.co.warehouseandroidtest.Permisson" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="nz.co.warehouseandroidtest.search.data.remote" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/permisson" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/navigation" />
       <recent name="$PROJECT_DIR$/app/src/test/java/nz/co/warehouseandroidtest" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/common" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="nz.co.warehouseandroidtest.common" />
@@ -275,12 +287,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1623475381224">
+    <state x="576" y="172" key="#app" timestamp="1623554238480">
+      <screen x="83" y="25" width="1597" height="1025" />
+    </state>
+    <state x="576" y="172" key="#app/83.25.1597.1025@83.25.1597.1025" timestamp="1623554238480" />
+    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1623554610688">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="1026" y="245" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1623389673040" />
     <state x="1058" y="264" key="#com.intellij.ide.util.MemberChooser/83.25.1597.1025@83.25.1597.1025" timestamp="1623396664522" />
-    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser/86.25.1594.1025@86.25.1594.1025" timestamp="1623475381224" />
+    <state x="1059" y="264" key="#com.intellij.ide.util.MemberChooser/86.25.1594.1025@86.25.1594.1025" timestamp="1623554610688" />
     <state x="347" y="467" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1623398282640">
       <screen x="83" y="25" width="1597" height="1025" />
     </state>
@@ -295,10 +311,11 @@
     </state>
     <state x="512" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623398384437" />
     <state x="514" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623457614778" />
-    <state x="911" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623472592165">
-      <screen x="86" y="25" width="1594" height="1025" />
+    <state x="910" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623555631996">
+      <screen x="83" y="25" width="1597" height="1025" />
     </state>
     <state x="869" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1623383856211" />
+    <state x="910" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623555631996" />
     <state x="911" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623472592165" />
     <state x="648" y="245" key="#xdebugger.evaluate" timestamp="1623545646952">
       <screen x="86" y="25" width="1594" height="1025" />
@@ -317,59 +334,59 @@
     <state x="738" y="388" key="AndroidCreateXmlResourceDialog/75.25.1605.1025@75.25.1605.1025" timestamp="1623392471770" />
     <state x="743" y="388" key="AndroidCreateXmlResourceDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623447249793" />
     <state x="745" y="388" key="AndroidCreateXmlResourceDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623544968355" />
-    <state x="741" y="306" key="AndroidProcessChooserDialog" timestamp="1623545598982">
+    <state x="741" y="306" key="AndroidProcessChooserDialog" timestamp="1623557348730">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="739" y="306" key="AndroidProcessChooserDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623399687920" />
-    <state x="741" y="306" key="AndroidProcessChooserDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623545598982" />
-    <state width="1552" height="342" key="GridCell.Tab.0.bottom" timestamp="1623545658067">
+    <state x="741" y="306" key="AndroidProcessChooserDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623557348730" />
+    <state width="1552" height="342" key="GridCell.Tab.0.bottom" timestamp="1623557500323">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705108" />
     <state width="1552" height="401" key="GridCell.Tab.0.bottom/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614120" />
     <state width="1552" height="342" key="GridCell.Tab.0.bottom/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136567" />
-    <state width="1552" height="342" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623545658067" />
-    <state width="1552" height="342" key="GridCell.Tab.0.center" timestamp="1623545658066">
+    <state width="1552" height="342" key="GridCell.Tab.0.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623557500323" />
+    <state width="1552" height="342" key="GridCell.Tab.0.center" timestamp="1623557500321">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705107" />
     <state width="1552" height="401" key="GridCell.Tab.0.center/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614118" />
     <state width="1552" height="342" key="GridCell.Tab.0.center/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136566" />
-    <state width="1552" height="342" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623545658066" />
-    <state width="1552" height="342" key="GridCell.Tab.0.left" timestamp="1623545658066">
+    <state width="1552" height="342" key="GridCell.Tab.0.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623557500321" />
+    <state width="1552" height="342" key="GridCell.Tab.0.left" timestamp="1623557500321">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705106" />
     <state width="1552" height="401" key="GridCell.Tab.0.left/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614118" />
     <state width="1552" height="342" key="GridCell.Tab.0.left/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136565" />
-    <state width="1552" height="342" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623545658066" />
-    <state width="1552" height="342" key="GridCell.Tab.0.right" timestamp="1623545658066">
+    <state width="1552" height="342" key="GridCell.Tab.0.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623557500321" />
+    <state width="1552" height="342" key="GridCell.Tab.0.right" timestamp="1623557500322">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1638" height="427" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1623393705107" />
     <state width="1552" height="401" key="GridCell.Tab.0.right/79.25.1601.1025@79.25.1601.1025" timestamp="1623393614119" />
     <state width="1552" height="342" key="GridCell.Tab.0.right/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136566" />
-    <state width="1552" height="342" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623545658066" />
-    <state width="1552" height="342" key="GridCell.Tab.1.bottom" timestamp="1623545658068">
+    <state width="1552" height="342" key="GridCell.Tab.0.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623557500322" />
+    <state width="1552" height="342" key="GridCell.Tab.1.bottom" timestamp="1623557500324">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1552" height="342" key="GridCell.Tab.1.bottom/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136568" />
-    <state width="1552" height="342" key="GridCell.Tab.1.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623545658068" />
-    <state width="1552" height="342" key="GridCell.Tab.1.center" timestamp="1623545658067">
+    <state width="1552" height="342" key="GridCell.Tab.1.bottom/86.25.1594.1025@86.25.1594.1025" timestamp="1623557500324" />
+    <state width="1552" height="342" key="GridCell.Tab.1.center" timestamp="1623557500323">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1552" height="342" key="GridCell.Tab.1.center/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136567" />
-    <state width="1552" height="342" key="GridCell.Tab.1.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623545658067" />
-    <state width="1552" height="342" key="GridCell.Tab.1.left" timestamp="1623545658067">
+    <state width="1552" height="342" key="GridCell.Tab.1.center/86.25.1594.1025@86.25.1594.1025" timestamp="1623557500323" />
+    <state width="1552" height="342" key="GridCell.Tab.1.left" timestamp="1623557500323">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1552" height="342" key="GridCell.Tab.1.left/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136567" />
-    <state width="1552" height="342" key="GridCell.Tab.1.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623545658067" />
-    <state width="1552" height="342" key="GridCell.Tab.1.right" timestamp="1623545658068">
+    <state width="1552" height="342" key="GridCell.Tab.1.left/86.25.1594.1025@86.25.1594.1025" timestamp="1623557500323" />
+    <state width="1552" height="342" key="GridCell.Tab.1.right" timestamp="1623557500324">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state width="1552" height="342" key="GridCell.Tab.1.right/83.25.1597.1025@83.25.1597.1025" timestamp="1623400136568" />
-    <state width="1552" height="342" key="GridCell.Tab.1.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623545658068" />
+    <state width="1552" height="342" key="GridCell.Tab.1.right/86.25.1594.1025@86.25.1594.1025" timestamp="1623557500324" />
     <state x="384" y="173" key="SettingsEditor" timestamp="1623454460838">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
@@ -386,10 +403,10 @@
       <screen x="83" y="25" width="1597" height="1025" />
     </state>
     <state x="186" y="125" width="1394" height="825" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/83.25.1597.1025@83.25.1597.1025" timestamp="1623533785437" />
-    <state x="186" y="125" width="1394" height="825" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1623477842705">
+    <state x="185" y="125" width="1394" height="825" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1623557473074">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
-    <state x="186" y="125" width="1394" height="825" key="com.intellij.history.integration.ui.views.FileHistoryDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623477842705" />
+    <state x="185" y="125" width="1394" height="825" key="com.intellij.history.integration.ui.views.FileHistoryDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623557473074" />
     <state x="539" y="156" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1623542921974">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
@@ -405,50 +422,40 @@
     <state x="477" y="275" width="735" height="500" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1623383583977" />
     <state x="536" y="293" width="698" height="488" key="find.popup/83.25.1597.1025@83.25.1597.1025" timestamp="1623382585552" />
     <state x="539" y="293" width="698" height="489" key="find.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623542919335" />
-    <state x="645" y="173" key="refactoring.ChangeSignatureDialog" timestamp="1623476139894">
+    <state x="645" y="173" key="refactoring.ChangeSignatureDialog" timestamp="1623556172102">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
-    <state x="645" y="173" key="refactoring.ChangeSignatureDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623476139894" />
-    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1623545457055">
+    <state x="645" y="173" key="refactoring.ChangeSignatureDialog/86.25.1594.1025@86.25.1594.1025" timestamp="1623556172102" />
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1623556896970">
       <screen x="86" y="25" width="1594" height="1025" />
     </state>
     <state x="485" y="233" width="707" height="693" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1623393752006" />
     <state x="538" y="252" width="676" height="677" key="search.everywhere.popup/75.25.1605.1025@75.25.1605.1025" timestamp="1623392106004" />
     <state x="544" y="252" width="673" height="677" key="search.everywhere.popup/83.25.1597.1025@83.25.1597.1025" timestamp="1623396836070" />
-    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623545457055" />
+    <state x="546" y="252" width="670" height="676" key="search.everywhere.popup/86.25.1594.1025@86.25.1594.1025" timestamp="1623556896970" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/main/presentation/ui/activity/MainActivity.kt</url>
-          <line>19</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt</url>
+          <line>172</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt</url>
-          <line>137</line>
-          <option name="timeStamp" value="16" />
+          <line>173</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt</url>
-          <line>138</line>
-          <option name="timeStamp" value="17" />
+          <line>175</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt</url>
-          <line>96</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt</url>
-          <line>101</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/nz/co/warehouseandroidtest/search/presentation/ui/fragments/SearchFragment.kt</url>
-          <line>103</line>
-          <option name="timeStamp" value="20" />
+          <line>176</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

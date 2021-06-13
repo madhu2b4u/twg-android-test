@@ -111,7 +111,7 @@ class SearchFragment : BaseFragment() {
     }
 
     private fun setViews() {
-        tvTitle.text  = getString(R.string.search_product)
+        tvTitle.text  = getString(R.string.search_product_title)
 
         ivBarCode.setOnClickListener {
             startActivity(Intent(requireActivity(), ScanBarcodeActivity::class.java))
